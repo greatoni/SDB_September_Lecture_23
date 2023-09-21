@@ -1,0 +1,45 @@
+/*  This  is a comment within CSS.*/
+
+/* I wish to change the color of my p tags, here is what I can do! */
+
+p, h1{
+    color: brown;
+}
+
+/* What we write before our curly brace is our selector. This is the term for the elements that on the HTML page that will be affected by this ruleset. */
+body {
+    background-color: cyan;
+
+}
+
+
+/* This is a class, this will select all elements with the class name. */
+.class1{
+    background-color: lightgrey;
+    text-align: center;
+    text-decoration: underline;
+
+
+}
+
+/* 
+    To select an id, precede the selector with a #.
+    Only one item with a specific ID per page should be used.
+    Especially when Javascript will be applied, as it will make things complicated.
+*/
+#idExample {
+    color: red;
+}
+/* css selectors
+    -body
+    -p
+        -Element Selector selects all instances of a tag from the html page.
+*/
+
+/* in css we have three ways to refer to a color.
+    Color keywords such as "Grey, Green, Red"
+    RGBA codes. (three or four values from 0-255) Red, Green, Blue, and Albedo.
+    Hexedecimel Code. -#002255, each pair of values represents one our RGB values, hex colors are made of three pairs of characters. These count from 0-9-a-f.
+
+
+*/
