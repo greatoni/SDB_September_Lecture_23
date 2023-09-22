@@ -43,3 +43,59 @@ body {
 
 
 */
+/* This selector only works on btn classes within nav. */
+nav .btn {
+    text-shadow: 2px 2px 2px black;
+}
+
+/* This selecter only affects the direct children of the container. */
+nav > .btn {
+    background-color:  slategray;
+}
+
+a {
+    /* This will change text color using the tag or element name. */
+    color: aliceblue;
+}
+
+/* 
+!CSS heirarchy
+    This allows CSS to use distinct levels of priority to style elements.
+    Order of priority from weakest to strongest:
+    
+    External Style Sheet (A .CSS file which isn't in the HTML file.)
+    -element.
+    -class.
+    -ID.
+    -!important.
+
+    Internal Style Sheet (A .CSS file which IS in the HTML file.) This can be created with the <style> </style> tag.
+    -element.
+    -class.
+    -ID.
+    -!important.
+
+    Inline Styling (Adding a style property to an HTML element)
+    -!important
+*/
+
+/* styling unvisited links. */
+a:link
+{
+    color: chocolate;
+}
+/* styling visited links. */
+a:visited
+{
+    color: green;
+}
+
+/* styling links that my mouse is hovering over; */
+a:hover {
+    color:pink;
+}
+
+/* styling links while they are being clicked. */
+a:active{
+    color:antiquewhite;
+}

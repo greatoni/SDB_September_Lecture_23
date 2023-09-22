@@ -1,0 +1,25 @@
+/* justify-content organizes items horizontally.
+    Align-items organizes it vertically, */
+
+.flex-sample{
+    /* If I wish to use flex to move items, I will edit the display properties in CSS to "flex" like below. */
+    display: flex;
+    /* Flex will by default show my items on a page in a row, meaning side by side. */
+    flex-direction: column;
+    /* Flex direction controls where info on our page goes, telling it the order info should be shown to the end user. 
+    Top to bottom, bottom to top, right to left, and left to right. */
+    align-items:center;
+}
+
+#flex-container{
+    display: flex;  /* Flex direction of row! */
+    flex-wrap: wrap;/* This is a multi-line flex container, wrap any content that goes past the screen to a new line. */
+    justify-content: space-evenly;
+}
+
+.card{
+    background-color: turquoise;
+    border-radius: 5px;
+    padding: 7px;
+    width: 30%; /* Allocates space for objects by a percentile range.  */
+}
