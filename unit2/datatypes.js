@@ -46,3 +46,23 @@ let abcdefghijklmnopqrstuvwxyz = "The quick brown fox jumps over the lazy dog."
 //quick cool thing;
 let a = Number("45"); //Turns string of numbers into numbers;
 console.log(a);
+
+
+let undef = undefined; // instead of assigning our undef variable a datatype of undefined, we can simply just declare the varaible.
+console.log(undef); // undefined
+
+let correct; // write like this instead
+console.log(correct); // undefined
+Numbers:
+
+let precise = 999999999999999; // 15 9's
+console.log(precise); // 999999999999999
+
+let rounded = 9999999999999999; // 16 9's: JS gives you space for 15 9s before it rounds up
+console.log(rounded); // 10000000000000000
+
+let notQuite = 0.2 + 0.1;
+console.log(notQuite); // 0.30000000000000004// JS rounds out at a certain number, so if math is needed, be aware
+
+let numbersAreHard = (0.2 * 10 + 0.1 * 10) / 10; // we can still do math with JS, though
+console.log(numbersAreHard); // 0.3
