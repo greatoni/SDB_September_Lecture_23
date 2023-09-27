@@ -129,7 +129,7 @@ console.log(burritos[0]); //Returns the first item in the array.
         - object literals (key/value pairs)
         - array literals (lists)
 */
-
+/* 
 // STRING LITERAL
 let car = 'Ford';
 
@@ -161,4 +161,16 @@ console.log(days.toString()); //Monday, Tuesday, Wednesday, Thursday, Friday
 //this is a method that comes built into javascript to help us separate an array into strings
 
 console.log(days.length);
-/* this is a property of arrays. Properties are things that already belong to an object
+// this is a property of arrays. Properties are things that already belong to an object 
+
+
+/* 
+    Multiplication can be hard, so we have special values.
+    Special values
+    Infinity
+    NAN
+*/
+
+let inf = 5/0; //Returns infinity due to dividing by zero.
+
+let notANumber = "String" * 317 //returns NAN, or not a number.
