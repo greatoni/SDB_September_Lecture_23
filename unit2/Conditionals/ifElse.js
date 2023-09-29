@@ -66,7 +66,7 @@ if( person1isCool && person2isCool)
 {
     console.log("You are both cool, come in!")
 }
-else if (person1isCool || person2isCool)
+else if (person1isCool || person2isCool) // OR
 {
     console.log("One of you is cool, nice to meet the new guy!")
 }
@@ -74,3 +74,4 @@ else
 {
     console.log("Neither of you are cool, please go away.")
 }
+
