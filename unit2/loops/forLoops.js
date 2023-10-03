@@ -97,6 +97,50 @@ Loops loop through a block of code a number of times that we control!
         For in loops can be used on both objects AND arrays.
         But if array index order is important: it's better to use a 
         -for loop,
-        -for of loop
-        
+        -for of loop,
+        -Array.forEach(),
     */
+
+    /*
+        ?For of Loops:
+
+        - Loops through the values of an iterable object.
+            Iterable- an object that has iterable properties.(stuff that can be counted/went through);
+
+        Structure:
+        for ( variable of iterableData){
+            ...code
+        }
+
+        Can loop through arrays, strings, etc.
+    */
+
+    let dogArray = [
+        "Kabosu",
+        "Caesar",
+        "Mishka",
+        "Laika",
+        "Maxwell",
+        "Tofu",
+        "Kevin",
+        "Apollo",
+    ]
+
+    for (puppy of dogArray){
+        console.log(puppy);
+    }
+
+    for (dog of dogArray){
+        if (dog === "Apollo")
+        {
+            console.log("LONG BOI!!!!!!!!")
+        }
+        else if (dog === "Kabosu" || dog === "Caesar")
+        {
+            console.log("DOGE!!!!!!!!")
+        }
+        else 
+        {
+            console.log("ADORABLE!");
+        }
+    }
