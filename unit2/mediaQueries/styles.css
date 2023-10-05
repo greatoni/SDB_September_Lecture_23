@@ -1,0 +1,40 @@
+.page-wrapper {
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(6, 1fr);
+    grid-template-areas: 
+    "nav nav nav"
+    "main main main"
+    "main main main"
+    "main main main"
+    "footer footer footer";
+    height: 100vh
+    ;
+}
+
+.navbar {
+background-color: aqua;
+grid-area: nav;
+}
+
+.content{
+    grid-area: main ;
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card{
+    height: 75px;
+    width: 75px;
+    border: 2px dashed black;
+}
+
+@media screen and (max-width: 480px) {
+    
+    .content
+    {
+        flex-direction: column;
+        background-color: red;
+    }
+}
