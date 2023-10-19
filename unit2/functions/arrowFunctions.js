@@ -95,13 +95,21 @@ function tipCalculator(total, percentage)
     let adjustedPercentage = percentage *0.01
 
     let tip = total * adjustedPercentage;
+    let trueTip = tip.toFixed(2)
+    return trueTip;
+}
 
-    return tip;
+function totalMealCalculator(mealCost, percentage)
+{
+    let tip = tipCalculator(mealCost, percentage)
+    let totalMeal = mealCost + tip;
+    let trueTotalMeal = totalMeal.toFixed(2)
+    return `The meal cost ${mealCost} with a tip rate of ${percentage}% for ${tip}. The total cost is ${trueTotalMeal}. The change is equal to ${100 - totalMeal}.`
 }
 
 let myMeal = 50
 let suggestedGratuity = 26
 
-let tip = tipCalculator(myMeal, suggestedGratuity);
+let tip = totalMealCalculator(myMeal, suggestedGratuity);
 
 console.log(tip);
