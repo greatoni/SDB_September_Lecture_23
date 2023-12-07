@@ -21,14 +21,14 @@ router.get("/", (req,res) => {
 
 // TODO GET ONE
 
-router.get('/:id', (req,res) => {
+router.get('/findone/:id', (req,res) => {
     console.log(req.params);
 
 
     try{
 
         let {id} = req.params;
-        let results = db.filter(i = i.id == id);
+        let results = db.filter(i => i.id == id);
 
         console.log(results);
 
@@ -36,11 +36,43 @@ router.get('/:id', (req,res) => {
             results:results[0]
         })
 
-    } catch(error)
+    } catch(err)
     {
         error: err.message        
     }
 })
+
+router.get('/query/', (req,res) => {
+    /* 
+        -anything after the endpoint can be extracted
+        ex:
+            localhost:4000/routes/query/?firstname='john';
+    */
+    
+        try {
+
+            const {firstName, lastName} = req.query;
+
+            if(firstName && lastName)
+            {
+                res.status(200).json({
+                    results:{
+                        first: firstName,
+                        last: lastName,
+                        full: `${firstName}, ${lastName}`
+                    }
+
+                })
+            } else {
+                throw new Error("Need to supply both First and Last names.")
+            }
+    
+        }catch(err) {
+            res.status(500).json({
+                err: err.message
+            })
+        }
+    })
 
 router.get('*', (req,res) => {
     try {
@@ -53,5 +85,7 @@ router.get('*', (req,res) => {
         })
     }
 })
+
+
 
 module.exports = router;
