@@ -1,0 +1,452 @@
+{
+	"info": {
+		"_postman_id": "a3877e8c-5d43-4433-8785-bb261fd0d4e2",
+		"name": "sbpt-sept-23",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31439385",
+		"_collection_link": "https://crimson-meteor-737025.postman.co/workspace/516aa2b4-6693-4345-9a8f-bd6707510217/collection/31439385-a3877e8c-5d43-4433-8785-bb261fd0d4e2?action=share&source=collection_link&creator=31439385"
+	},
+	"item": [
+		{
+			"name": "IntroToExpress",
+			"item": [
+				{
+					"name": "Hello World",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/practice/hello-world",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"practice",
+								"hello-world"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "main",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000",
+							"host": [
+								"localhost"
+							],
+							"port": "4000"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "greeting",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "json",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Ted\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/practice/json",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"practice",
+								"json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"Ted\",\r\n    \"lastName\":\"Flanders\",\r\n    \"email\": \"no2email\",\r\n    \"password\": \"test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/practice/todo",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"practice",
+								"todo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "wildcard",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/practice/notaRoute",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"practice",
+								"notaRoute"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/routes/",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"routes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/routes/findone/1",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"routes",
+								"findone",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "query",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/routes/query/?firstName=shaun&lastName=remmer",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"routes",
+								"query",
+								""
+							],
+							"query": [
+								{
+									"key": "firstName",
+									"value": "shaun"
+								},
+								{
+									"key": "lastName",
+									"value": "remmer"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "newExpressAppChallenge",
+			"item": [
+				{
+					"name": "GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/getdata/",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"getdata",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/getdata/findOne/24",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"getdata",
+								"findOne",
+								"24"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "mongodbmovies",
+			"item": [
+				{
+					"name": "New Folder",
+					"item": [
+						{
+							"name": "allMovies",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PORT}}/movies/",
+									"host": [
+										"{{PORT}}"
+									],
+									"path": [
+										"movies",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "oneMovie",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PORT}}/movies/findOne/{{ID}}",
+									"host": [
+										"{{PORT}}"
+									],
+									"path": [
+										"movies",
+										"findOne",
+										"{{ID}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "byGenre",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{PORT}}/movies/findGenre/Action",
+									"host": [
+										"{{PORT}}"
+									],
+									"path": [
+										"movies",
+										"findGenre",
+										"Action"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteone",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{PORT}}/movies/{{ID}}",
+									"host": [
+										"{{PORT}}"
+									],
+									"path": [
+										"movies",
+										"{{ID}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "patchone",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"BAD BOI MOVIE RETURNS\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{PORT}}/movies/{{ID}}",
+									"host": [
+										"{{PORT}}"
+									],
+									"path": [
+										"movies",
+										"{{ID}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first\": \"Roberto\",\r\n    \"last\": \"Fungler\",\r\n    \"email\": \"fivemail@email.com\",\r\n    \"password\": \"milehigh\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PORT}}/user/signup",
+							"host": [
+								"{{PORT}}"
+							],
+							"path": [
+								"user",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": \"two@email.com\",\r\n    \"password\": \"yermumlol\" \r\n}"
+						},
+						"url": {
+							"raw": "{{PORT}}/user/login",
+							"host": [
+								"{{PORT}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "newMovie",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"bad boi movie 3 gone sexual!!!!\",\r\n    \"genre\": \"Adult\",\r\n    \"rating\": \"Pg\",\r\n    \"length\": 120,\r\n    \"releaseYear\": 2020\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PORT}}/movies/",
+							"host": [
+								"{{PORT}}"
+							],
+							"path": [
+								"movies",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "https://http.cat/404",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://http.cat/404",
+					"protocol": "https",
+					"host": [
+						"http",
+						"cat"
+					],
+					"path": [
+						"404"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

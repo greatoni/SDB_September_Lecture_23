@@ -3,14 +3,14 @@ const index = express();
 const PORT = 4000;
 
 
-const{ logTime } = require(`./utils`) 
+const{ logTime, getTimestamp } = require(`./utils`) 
 const indexController = require("./controllers/index.controller")
 
 index.use(express.static(`${__dirname}/public`))
 
 // * Middleware
 index.use(express.json())
-index.use(logTime);
+index.use(getTimestamp);
 index.use(express.urlencoded());
 index.use(express.static(`${__dirname}/public`))
 

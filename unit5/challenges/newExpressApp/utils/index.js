@@ -1,13 +1,17 @@
-function logTime(req,res,next) {
-    //console.log(req);
+function getTimestamp(req,res,next)
+{
+    const date = new Date();
+    const hour = date.getHours();
+    const minute = date.gitMinutes();
 
-    let date = new Date();
-    req.datePosted = date.toLocaleString();
+    const time = `${hour}:${minute}`;
 
-    console.log('datePosted: ', req.datePosted)
+    req.timeStamp = time;
+
+    console.log(req.timeStamp);
     next();
 }
 
 module.exports = {
-    logTime: logTime,
+    getTimestamp: getTimestamp,
 }
