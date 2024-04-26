@@ -12,9 +12,9 @@ export default function Counter(props) {
   
     return (
     <div>
-        <p>{props.count}</p>
-        <button onClick={increment()}>+</button>
-        <button onClick={decrement()}>-</button>
+        <span>{props.count}</span>
+        <button onClick={increment}>+</button>
+        <button onClick={decrement}>-</button>
         
     </div>
   )
